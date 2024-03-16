@@ -7,6 +7,8 @@ const theme = document.getElementById("theme");
 const ball = document.getElementById("ball");
 const display = document.querySelector(".display");
 const displayshow = document.querySelector(".displayone");
+const displayspan = document.querySelector(".display1");
+const displayspan1 = document.querySelector(".displayspan");
 
 btn.addEventListener("click", addtodo);
 input.addEventListener("keyup", function(event) {
@@ -18,10 +20,12 @@ input.addEventListener("keyup", function(event) {
 
 theme.addEventListener("click", function(){
 
-  ball.classList.toggle("ball-active");
+
   document.body.classList.toggle("sunshine");
   display.classList.toggle("displayshow");
   displayshow.classList.toggle("display");
+  displayspan.classList.toggle("displayshowspan");
+  displayspan1.classList.toggle("display1")
 
 })
 
